@@ -456,6 +456,7 @@ main > section {
   letter-spacing: 0.18em;
   line-height: 1.8;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .case-list,
@@ -592,6 +593,7 @@ main > section {
   letter-spacing: 0.12em;
   line-height: 1.18;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .flow-caption {
@@ -601,6 +603,7 @@ main > section {
   font-size: 15px;
   line-height: 1.25;
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .flow-arrow {
@@ -980,7 +983,7 @@ main > section {
   }
 
   .flow-node {
-    width: 120px;
+    width: min(120px, 100%);
   }
 
   .flow-caption {
@@ -1152,7 +1155,7 @@ main > section {
   }
 
   .flow-node {
-    width: 128px;
+    width: min(128px, 100%);
   }
 
   .previous-row {
@@ -1169,7 +1172,8 @@ main > section {
   }
 
   .approach-grid {
-    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 22px;
   }
 
   .approach-step {
@@ -1197,7 +1201,7 @@ main > section {
   }
 
   .approach-arrow {
-    right: -30px;
+    display: none;
   }
 
   .focus-block {
