@@ -1,0 +1,7 @@
+index.html
+styles.css
+script.js
+README.md
+PUBLISH_MANIFEST.txt
+.nojekyll
+assets/artemiy-brazhnikov.png
