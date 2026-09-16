@@ -376,6 +376,49 @@ main > section {
   line-height: 1.8;
 }
 
+@media (min-width: 1221px) {
+  .hero-portrait {
+    margin-bottom: 118px;
+  }
+
+  .hero-schematic {
+    top: calc(100% + 18px);
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 86px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .hero-schematic-lines,
+  .hero-schematic-note {
+    display: none;
+  }
+
+  .hero-schematic-node,
+  .hero-schematic-node--process,
+  .hero-schematic-node--crm,
+  .hero-schematic-node--analysis,
+  .hero-schematic-node--automation {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: 68px;
+    height: 68px;
+    justify-self: center;
+  }
+
+  .hero-schematic-node span {
+    width: 100px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 .utility-rail {
   display: flex;
   justify-content: space-between;
