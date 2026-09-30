@@ -1698,3 +1698,10 @@ main > section {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Entry to the expanded presentation; same portfolio design system. */
+.portfolio-extension{display:flex;align-items:center;justify-content:space-between;gap:32px;margin:24px 0 46px;padding:26px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.portfolio-extension p{max-width:720px;margin:0;font-size:20px;line-height:1.55;color:#344e74}
+.portfolio-extension .button{font-size:17px;padding:16px 24px;min-height:54px;flex-shrink:0}
+@media(max-width:900px){.portfolio-extension{align-items:flex-start;flex-direction:column;gap:22px}.portfolio-extension p{font-size:18px}}
+@media(max-width:620px){.portfolio-extension .button{width:100%;font-size:16px}}

@@ -1,0 +1,39 @@
+[
+  {
+    "scenario": "Запись подтверждена",
+    "status": "created",
+    "message": "Тестовая CRM подтвердила запись DEMO-001.",
+    "crm_calls": 1
+  },
+  {
+    "scenario": "Время занято",
+    "status": "slot_taken",
+    "message": "Это время уже занято. Выберите другое.",
+    "crm_calls": 0
+  },
+  {
+    "scenario": "Расписание недоступно",
+    "status": "availability_unknown",
+    "message": "Не удалось проверить время. Запись не создана.",
+    "crm_calls": 0
+  },
+  {
+    "scenario": "Конфликт параметров",
+    "status": "state_conflict",
+    "message": "Параметры разошлись. Повторно выберите время.",
+    "crm_calls": 0
+  },
+  {
+    "scenario": "Неясный ответ CRM",
+    "status": "needs_review",
+    "message": "Ответ CRM неясен. Нужна сверка перед повтором.",
+    "crm_calls": 1
+  },
+  {
+    "scenario": "Повтор подтверждения",
+    "status": "created",
+    "message": "Возвращён прежний результат DEMO-001; второй записи нет.",
+    "crm_calls": 1,
+    "same_result": true
+  }
+]
